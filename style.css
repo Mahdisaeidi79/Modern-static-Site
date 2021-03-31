@@ -1,0 +1,410 @@
+ /*-------------- RESET STYLE ------------------ */
+  html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     background: transparent;
+ }
+ ol, ul {
+     list-style: none;
+ } 
+  /*-------------- RESET STYLE ------------------ */
+ 
+ @font-face {
+     font-family: Ubuntu;
+     src: url(Fonts/Ubuntu-Medium.ttf);
+ }
+ @font-face{
+    font-family: Overpass;
+    src: url(Fonts/Overpass_Regular.ttf);
+ }
+
+ 
+ * {
+     direction: ltr;
+     box-sizing: border-box;
+    }
+    html{
+        width: 1440px !important;
+        background: #fafafa;
+    } 
+    a{
+        text-decoration: none;
+    }
+
+ .container{
+     display: grid;
+     grid-template-rows: 500px 2600px 400px;
+     grid-template-areas: "header"  "main" "footer";
+ }
+ .header{
+     grid-area: header;
+     background: url(images/bg-pattern-intro.svg) -50px -1000px no-repeat , linear-gradient(to top left,  hsl(353, 100%, 62%) ,  hsl(13, 100%, 72%)) ;
+     border-radius: 0px 0px 0px 100px;
+     background-size: 2400px 2400px;
+ }
+.header .siteName{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    font-family: 'Ubuntu';
+    top: 30px;
+    left: 150px;
+}
+.header .menu{
+    display: flex;
+    position: absolute;
+    top: 28px;
+    left: 250px;
+    flex-direction: row;
+    justify-content:center;
+    color: hsl(0, 0%, 100%) ;
+}
+.header .menu >ul{
+    padding-left:20px ; 
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Overpass';
+}
+.header .menu >ul>a{
+    color: hsl(0, 0%, 100%) ;
+}
+.header .menu .drop-content{
+    display: none;
+    position: absolute;
+    background:hsl(0, 0%, 100%) ;
+    padding: 10px 40px 10px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.header .menu .drop-content > li{
+    padding: 10px;
+    font-weight: lighter;
+    font-weight: 16px;
+}
+.header .menu .drop-content > li > a{
+    color: black;
+}
+.header .menu3:hover .drop-content{
+  display: block;
+}
+.header .menu3 .drop-content:hover > li{
+    font-weight: bold;
+  }
+.header .login-signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    top: 50px;
+    right: 200px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+.header .login-signup .login{
+    padding-right: 20px;
+    margin-right: 20px;  
+}
+.header .login-signup .login > a{   
+    color:  hsl(0, 0%, 100%);
+}
+.header .login-signup .signUp{
+   padding: 6px 20px;
+   margin-top: -6px;
+   background-color: hsl(0, 0%, 100%);
+   border-radius: 15px;
+   transition: 0.3s;
+}
+.header .login-signup .signUp > a{
+    color:  hsl(356, 100%, 66%);
+}
+.header .login-signup .signUp:hover{
+    background: rgba(255, 255, 255, 0.3);   
+}
+.header .login-signup .signUp:hover >a{
+    color: hsl(0, 0%, 100%);
+}
+.header .description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 190px; 
+}
+.header .description .desc1{
+    font-size: 60px;
+    font-family: 'Ubuntu';
+    color: hsl(0, 0%, 100%);
+}
+.header .description .desc2{
+    color: hsl(0, 0%, 100%);
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Overpass';
+}
+.header .startMore{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 240px;
+    left: 600px;
+    font-family: 'Ubuntu';
+}
+.header .startMore .start{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 6px 20px;
+    margin-top: -6px;
+    transition: 0.3s;
+}
+.header .startMore .start > a{
+    color:  hsl(356, 100%, 66%);
+}
+.header .startMore .start:hover{
+    background: rgba(255, 255, 255, 0.3); 
+}
+.header .startMore .start:hover >a{
+    color: hsl(0, 0%, 100%);
+}
+.header .startMore .more{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 6px 20px;
+    margin-top: -6px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.header .startMore .more > a{
+    color: hsl(0, 0%, 100%) ;
+}
+.header .startMore .more:hover{
+    background: hsl(0, 0%, 100%); 
+}
+.header .startMore .more:hover >a{
+    color:  hsl(356, 100%, 66%);
+}
+/* .main{
+    grid-area: main;
+    
+}
+.main .topMain{
+ grid-area: main;
+ height: 1100px;
+ background:url(images/illustration-editor-desktop.svg) +800px 80px no-repeat;
+ background-size: 900px 900px;
+ font-family: 'Overpass';
+ font-weight: lighter;
+}
+.main .topMain .headDesc1{
+    position: relative;
+    top: 160px;
+    text-align: center;
+    color: hsl(208, 49%, 24%);   
+    font-size: 40px;
+}
+.main .topMain .headDesc2{
+    position: relative;
+    top: 280px;
+    left: 180px;
+    color: #243d51;   
+    font-size: 22px;
+}
+.main .topMain .dec2{
+    margin-top: 15px;
+    position: relative;
+    top: 280px;
+    left: 180px;
+    width: 450px;
+    color: #7d8087;
+    font-size: 16px;
+}
+.main .topMain .headDec3{
+    position: relative;
+    top: 280px;
+    left: 180px;
+    margin-top: 90px;
+    color: #243d51;   
+    font-size: 22px;
+}
+.main .topMain .dec3{
+    margin-top: 15px;
+    position: relative;
+    top: 280px;
+    left: 180px;
+    width: 500px;
+    color: #7d8087;
+    font-size: 16px;
+}
+.main .middleMain{
+   grid-area: main;
+    height: 500px;
+    background: url(images/illustration-phones.svg) 100px -20px  no-repeat , url(images/bg-pattern-circles.svg) -200px -400px no-repeat  ,  linear-gradient(to bottom left ,  hsl(237, 23%, 32%) ,hsl(237, 17%, 21%)) ;
+    border-radius: 0px 100px 0px 100px;  
+    font-family: 'Overpass';
+}
+.main .middleMain .headDec{
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    text-align: end;
+    font-weight: lighter;
+    top: 120px;
+    right: 170px;
+    font-size: 35px;
+}
+.main .middleMain .dec{
+    position: relative;
+    color: #e0e3f6;
+    float: right;
+    font-weight: lighter;
+    top: 120px;
+    right: 140px;
+    margin-top: 20px;
+    width:500px;
+}
+.main .bottomMain{
+    grid-area: main;
+    height: 1000px;
+    background:url(images/illustration-laptop-desktop.svg) -285px 100px no-repeat;
+}
+.main .bottomMain .headDec1{
+    grid-area: main;
+    text-align: end;
+    position: relative;
+    top: 280px;
+    right:440px;
+    color: #243d51;   
+    font-size: 25px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+.main .bottomMain .dec1{
+    grid-area: main;
+    float: right;
+    position: relative;
+    top: 280px;
+    margin-top: 20px;
+    right:142px;
+    color: #7d8087;   
+    width: 500px;
+    font-size: 16px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+.main .bottomMain .headeDec2{
+    grid-area: main;
+    float: right;
+    position: relative;
+    top: 500px;
+    right:-46px;
+    color: #243d51;   
+    font-size: 25px;
+    margin-top: 40px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+.main .bottomMain .dec2{
+    grid-area: main;
+    float: right;
+    position: relative;
+    margin-top: 10px;
+    top: 600px;
+    right:-547px;
+    color: #7d8087;   
+    width: 500px;
+    font-size: 16px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+.footer{
+    grid-area: footer;
+    background: hsl(240, 10%, 16%);
+    border-radius: 0px 100px 0px 0px;
+}
+.footer .siteName{
+    font-size: 40px;
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    top: 60px;
+    left: 60px;
+    font-family: 'Overpass';
+}
+.footer .headgrp1{
+    font-size: 18px;
+    position: relative;
+    color: hsl(240, 2%, 79%);
+    top: 20px;
+    left: 400px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+.footer .headgrp2{
+    font-size: 18px;
+    position: relative;
+    color: hsl(240, 2%, 79%);
+    bottom: 222px;
+    left: 700px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+.footer .headgrp3{
+    font-size: 18px;
+    position: relative;
+    color: hsl(240, 2%, 79%);
+    bottom: 420px;
+    left: 1000px;
+    font-family: 'Overpass';
+    font-weight: lighter;
+}
+ .footer .grp1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 400px;
+    top: 20px;
+    width: 80px;
+    margin-top: 10px;
+    font-family: 'Overpass';
+} 
+.footer .grp1 > a{
+    padding-top: 15px;
+    color: #7d8087;
+}
+.footer .grp1 > a:hover{
+    border-bottom: 1px solid #7d8087;
+}
+.footer .grp2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 700px;
+    bottom: 222px;
+    width: 80px;
+    margin-top: 10px;
+    font-family: 'Overpass';
+}
+.footer .grp2 > a{
+    padding-top: 15px;
+    color: #7d8087;
+}
+.footer .grp3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1000px;
+    bottom: 410px;
+    width: 80px;
+    font-family: 'Overpass';
+}
+.footer .grp3 > a{
+    padding-top: 15px;
+    color: #7d8087;
+} */
