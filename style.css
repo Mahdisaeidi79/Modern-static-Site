@@ -329,7 +329,7 @@
     left: 60px;
     font-family: 'Overpass';
 }
-.footer .headgrp1{
+.footer .links .headgrp1{
     grid-area: footer;
     font-size: 18px;
     position: relative;
@@ -339,7 +339,7 @@
     font-family: 'Overpass';
     font-weight: lighter;
 }
-.footer .headgrp2{
+.footer .links .headgrp2{
     grid-area: footer;
     font-size: 18px;
     position: relative;
@@ -349,7 +349,7 @@
     font-family: 'Overpass';
     font-weight: lighter;
 }
-.footer .headgrp3{
+.footer .links .headgrp3{
     grid-area: footer;
     font-size: 18px;
     position: relative;
@@ -359,7 +359,7 @@
     font-family: 'Overpass';
     font-weight: lighter;
 }
- .footer .grp1 { 
+ .footer .links .grp1 { 
     grid-area: footer;
     display: flex;
     flex-direction: column;
@@ -370,14 +370,11 @@
     margin-top: 10px;
     font-family: 'Overpass';
 } 
-.footer .grp1 > a , .footer .grp2 > a , .footer .grp3 > a{
+.footer .links .grp1 > a , .footer .links .grp2 > a , .footer .links .grp3 > a{
     padding-top: 15px;
     color: #7d8087;
 }
-.footer .grp1 > a:hover , .footer .grp2 > a:hover , .footer .grp3 > a:hover{
-    text-decoration: underline;
-}
-.footer .grp2{
+.footer .links .grp2{
     grid-area: footer;
     display: flex;
     flex-direction: column;
@@ -388,8 +385,7 @@
     margin-top: 10px;
     font-family: 'Overpass';
 }
-
-.footer .grp3{
+.footer .links .grp3{
     grid-area: footer;
     display: flex;
     flex-direction: column;
@@ -398,4 +394,18 @@
     bottom: 410px;
     width: 80px;
     font-family: 'Overpass';
+}
+.footer .links .grp1 > a:hover , .footer .links .grp2 > a:hover , .footer .links .grp3 > a:hover{
+    text-decoration: underline;
+}
+.footer .links .attribution{
+    position: relative;
+    text-align: center;
+    bottom: 300px;
+    color: hsl(240, 2%, 79%);
+    font-size: 12px;
+    font-family: 'Overpass';
+}
+.footer .links .attribution > a{
+  color: white;
 }
