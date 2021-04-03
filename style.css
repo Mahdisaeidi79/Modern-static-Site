@@ -33,6 +33,7 @@
     }
     html{
         background: #fafafa;
+        overflow-x:hidden;
     } 
     a{
         text-decoration: none;
@@ -46,9 +47,12 @@
  }
  .header{
      grid-area: header;
-     background: url(images/bg-pattern-intro.svg) -90px -1000px no-repeat , linear-gradient(to bottom right , hsl(13, 100%, 72%)  , hsl(353, 100%, 62%)) ;
-     border-radius: 0px 0px 0px 100px;
-     background-size: 2400px 2400px;
+     background: url(images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+     background: url(images/bg-pattern-intro.svg), linear-gradient(90deg, #ff8f70, #ff3d54);
+     background-repeat: no-repeat;
+     background-position: 25%;
+     border-radius: 0 0 0 80px;
+     overflow: hidden;
  }
 .header .siteName{
     color: hsl(0, 0%, 100%);
@@ -104,19 +108,21 @@
     display: block;
     position: absolute;
 }
-
 .header .menu3 .drop-content> li > a:hover{
     font-weight: bold;
   } 
 .header .login-signup{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: row;
-    justify-content: end;
-    position: relative;
-    top: -5px;
-    right: 200px;
+    justify-content: flex-end;
     font-weight: bold;
     font-family: 'Ubuntu';
+    position: relative;
+    bottom: 8px;
+    right: 140px;
 }
 .header .login-signup .login{
     padding-right: 20px;
@@ -169,7 +175,7 @@
 .header .startMore .more:hover{
     background-color: hsl(0, 0%, 100%);
 }
-.header .startMore .start:hover{
+.header .startMore .start:hover {
     background-color: rgba(255, 255, 255, 0.3); 
 }
 .header .startMore .more{
@@ -183,11 +189,12 @@
 .header .startMore .more > a , .header .startMore .start:hover >a , .header .login-signup .signUp:hover >a , .header .login-signup .login > a , .header .menu > ul > li >a{
     color: hsl(0, 0%, 100%);
 }
-.header .startMore .start > a , .header .startMore .more:hover > a , .header .login-signup .signUp > a{
+.header .startMore .start > a , .header .startMore .more:hover > a , .header .login-signup .signUp > a {
     color:  hsl(356, 100%, 66%);
 }
  .main{
     grid-area: main;
+    overflow: hidden;
 }
 .main .topMain{
  grid-area: main;
@@ -317,11 +324,11 @@
     font-family: 'Overpass';
     font-weight: lighter;
 }
-
 .footer{
     grid-area: footer;
     background: hsl(240, 10%, 16%);
     border-radius: 0px 100px 0px 0px;
+    overflow: hidden;
 }
 .footer .siteName{
     grid-area: footer;
@@ -404,7 +411,7 @@
 .footer .links .attribution{
     position: relative;
     text-align: center;
-    bottom: 300px;
+    bottom: 280px;
     color: hsl(240, 2%, 79%);
     font-size: 12px;
     font-family: 'Overpass';
@@ -412,7 +419,7 @@
 .footer .links .attribution > a{
   color: white;
 }
-
+/*---------------------------- Responsive ---------------------------*/
 
 @media screen and (max-width:376px){
     .container{
@@ -495,10 +502,11 @@
         background: #ffffff;
         width: 80%;
         height: auto;
-        margin: 70px auto 20px auto;
+        margin: 40px auto 20px auto;
         border-radius: 5px;
         font-family: 'Overpass';
         text-align: center;
+        z-index: 1;
     }
     .mobileMenu a,
     .dropdown-btn {
