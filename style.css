@@ -418,7 +418,7 @@
     .container{
         display: grid;
         grid-template-columns: 375px;
-        grid-template-rows: 550px 2600px 400px;
+        grid-template-rows: 550px 2600px 900px;
         grid-template-areas: "header"  "main" "footer";
     }
     .header{
@@ -479,18 +479,21 @@
         background: transparent;
         border: none;
         position: relative;
-        bottom: 7px;
-        right: 4px;
+        bottom: 10px;
+        right: 3%;
         color: white;
         cursor: pointer;
         font-size: 30px;
+    }
+    .dropbtn:focus{
+        outline: 0;
     }
     .mobileMenu #dropDown {
         display: none;
         color: #213e50;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         background: #ffffff;
-        width: 320px;
+        width: 80%;
         height: auto;
         margin: 70px auto 20px auto;
         border-radius: 5px;
@@ -520,7 +523,7 @@
     #dropDown .dropdown-container {
         display: none;
         background: #efeff1;
-        width: 250px;
+        width: 80%;
         color: #536474;
         height: fit-content;
         padding: 10px 50px;
@@ -560,5 +563,101 @@
         font-weight: lighter;
         padding: 15px 20px;
     }
-  
+    .main .topMain{
+        background: url(images/illustration-editor-mobile.svg) 0px 200px no-repeat;
+        background-size: contain;
+    }
+    .main .topMain .headDesc1{
+        font-size: 25px;
+        top: 10%;
+        font-weight: lighter;
+        margin: 0px auto;
+    }
+    .main .topMain .headDesc2{
+        font-size: 25px;
+        width: 55%;
+        top: 45%;
+        left: 23%;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .main .topMain .dec2{
+        width: 90%;
+        top: 46%;
+        left: 5%;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .main .topMain .headDec3{
+        font-size: 25px;
+        width: 50%;
+        top: 40%;
+        font-weight: lighter;
+        text-align: center;
+        left: 25%;
+    }
+    .main .topMain .dec3{
+        width: 80%;
+        top: 41%;
+        left: 10%;
+        font-weight: lighter;
+        text-align: center;
+    } 
+    .main .middleMain{
+        background: url(images/illustration-phones.svg) no-repeat  , url(images/bg-pattern-circles.svg) 0px -150px  no-repeat  ,  linear-gradient(to bottom left ,  hsl(237, 23%, 32%) ,hsl(237, 17%, 21%)) ;
+        background-size: contain;
+        margin-top: 100px;
+        height: 600px;
+    } 
+    .main .middleMain .headDec{
+        font-size: 20px;
+        width: 50%;
+        top: 61%;
+        font-weight: lighter;
+        text-align: center;
+        left: 25%;
+    }
+    .main .middleMain .dec{
+        width: 90%;
+        top: 60%;
+        font-weight: lighter;
+        text-align: center;
+        right: 5%;
+        color: #7d8087;
+    }
+    .main .bottomMain{
+        background: url(images/illustration-laptop-mobile.svg) no-repeat;
+        background-size: contain;
+        margin-top: 10%;
+        height: 1000px;
+    }
+    .main .bottomMain .headDec1{
+        font-size: 25px;
+        width: 70%;
+        top: 28%;
+        font-weight: lighter;
+        text-align: center;
+        left: 15%;
+    }
+    .main .bottomMain .dec1{
+        width: 89%;
+        top: 27%;
+        font-weight: lighter;
+        text-align: center;
+        right: 6%;
+    }
+    .main .bottomMain .headeDec2{
+        font-size: 25px;
+        width: 70%;
+        top: 25%;
+        font-weight: lighter;
+        right: 5%;
+    }
+    .main .bottomMain .dec2{
+        width: 88%;
+        top: 25%;
+        font-weight: lighter;
+        text-align: center;
+        right: 6%;
+    }
 }
