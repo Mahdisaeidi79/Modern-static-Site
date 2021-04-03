@@ -414,7 +414,7 @@
 }
 
 
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     .container{
         display: grid;
         grid-template-columns: 375px;
