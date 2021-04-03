@@ -660,4 +660,30 @@
         text-align: center;
         right: 6%;
     }
+    .footer .siteName{
+        left:35%;
+        top: 5%;
+    }
+    .footer .attribution{
+        margin-top:-20%;
+    }
+    .footer .links .headgrp1{
+        left: 37%;
+        margin-top: 20%;
+        color: hsl(0, 0%, 100%);
+    }
+    .footer .links .headgrp2{
+        left: 36%;
+        margin-top: 75%;
+        color: hsl(0, 0%, 100%);
+    }
+    .footer .links .headgrp3{
+        left: 36%;
+        margin-top: 62%;
+        color: hsl(0, 0%, 100%);
+    }
+    .footer .links .grp1 , .footer .links .grp2, .footer .links .grp3{
+        left: 35%;
+        text-align: center;
+    }
 }
