@@ -1,0 +1,106 @@
+body{
+    font-family: "Montserral" , sans-serif;
+    background: linear-gradient(to right, #ff8f70, #ff3d54);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+form{
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3em;
+    height: 320px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+form p{
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+form a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;
+}
+form a:hover{
+    text-shadow: 2px 2px 6px #00000040;
+}
+form a:active{
+    text-shadow: none;
+}
+form input{
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 500;   
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5000px;
+}
+form input:hover{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(255, 255, 255, 0.2);
+}
+form input:focus{
+    outline: 0;
+}
+.drop{
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+.drop-1{
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    left: -40px;
+}
+.drop-2{
+    height: 80px;
+    width: 80px;
+    bottom: -30px;
+    right:-10px ;
+}
+.drop-3{
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    right: -60px;
+}
+.drop-4{
+    height: 60px;
+    width: 60px;
+    bottom: 170px;
+    left: -27px;   
+    bottom: -22px;
+}
