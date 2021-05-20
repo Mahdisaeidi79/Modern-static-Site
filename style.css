@@ -28,20 +28,22 @@
     src: url(Fonts/Overpass_Regular.ttf);
  }
  * {
-     direction: ltr;
      box-sizing: border-box;
     }
     html{
         background: #fafafa;
         overflow-x:hidden;
     } 
+    body{
+        direction:ltr;
+    }
     a{
-        text-decoration: none;
+        text-decoration: none !important;
         cursor: pointer;
     }
- .container{
+ .Container{
      display: grid;
-     grid-template-columns: 1440px;
+     grid-template-columns: auto;
      grid-template-rows: 550px 2600px 400px;
      grid-template-areas: "header"  "main" "footer";
  }
@@ -58,8 +60,8 @@
     color: hsl(0, 0%, 100%);
     position: absolute;
     font-family: 'Ubuntu';
-    top: 30px;
-    left: 150px;
+    top: 2rem;
+    left: 9.375rem;
 }
 .header .mobileMenu{
     display: none;
@@ -67,50 +69,37 @@
 .header .menu{
     display: flex;
     position: relative;
-    top: 28px;
-    right:250px;
+    top: 1.1rem;
+    right:18.625rem;
     flex-direction: row;
     justify-content:center;
-    color: hsl(0, 0%, 100%);
 }
-.header .menu >ul{
-    padding-left:25px ; 
+.header .menu .navbar .collapse >ul{
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 1.15rem;
     font-family: 'Overpass';
     cursor: pointer;
 }
-.header .menu >ul:hover{
+.header .menu .navbar .collapse ul >li{
+   padding-left:1.8rem;
+}
+.header .menu .navbar .collapse ul >li:hover{
     text-decoration: underline;
 }
 .header .menu .drop-content{
-    display: none;
-    position: absolute;
     background:hsl(0, 0%, 100%) ;
-    padding: 10px 50px 10px 10px;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 0.625rem 3.125rem 0.7rem 0.625rem;
+    border-radius: 0.3125rem;
+    margin-top: 1.5rem;
     overflow: hidden;
     box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.7);
 }
-.header .menu1 .drop-content , .header .menu2 .drop-content , .header .menu3 .drop-content{
-    position: relative;
-}
 .header .menu .drop-content > li{
-    padding: 10px;
+    padding: 0.625rem;
     font-weight: lighter;
-    font-weight: 16px;
+    font-size: 1rem;
+    width: 110%;
 }
-.header .menu .drop-content > li > a{
-    color: black;
-}
-.header .menu1:hover .drop-content , .header .menu2:hover .drop-content , .header .menu3:hover .drop-content{
-    display: block;
-    position: absolute;
-}
-.header .menu3 .drop-content> li > a:hover{
-    font-weight: bold;
-  } 
 .header .login-signup{
     display: -webkit-box;
     display: -moz-box;
@@ -120,9 +109,9 @@
     justify-content: flex-end;
     font-weight: bold;
     font-family: 'Ubuntu';
-    position: relative;
-    bottom: 8px;
-    right: 140px;
+    position: absolute;
+    top: 3.4rem;
+    right: 11.75rem;
 }
 .header .login-signup .login{
     padding-right: 20px;
@@ -143,10 +132,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 130px; 
+  top: 8rem; 
 }
 .header .description .desc1{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-family: 'Ubuntu';
     color: hsl(0, 0%, 100%);
 }
@@ -161,15 +150,14 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 180px;
-    left: 560px;
+    justify-content:center;
+    top:12rem;
     font-family: 'Ubuntu';
 }
 .header .startMore .start{
     background-color: hsl(0, 0%, 100%);
-    border-radius: 25px;
-    padding: 12px 30px;
-    margin-top: -6px;
+    border-radius: 3.5rem;
+    padding:1rem 2rem;
     transition: 0.3s;
 }
 .header .startMore .more:hover{
@@ -180,10 +168,9 @@
 }
 .header .startMore .more{
     border: 1px solid hsl(0, 0%, 100%);
-    border-radius: 25px;
-    padding: 12px 30px;
-    margin-top: -6px;
-    margin-left: 20px;
+    border-radius: 2.5rem;
+    padding:1rem 2rem;
+    margin-left: 1.8rem;
     transition: 0.3s;
 }
 .header .startMore .more > a , .header .startMore .start:hover >a , .header .login-signup .signUp:hover >a , .header .login-signup .login > a , .header .menu > ul > li >a{
@@ -332,40 +319,40 @@
 }
 .footer .siteName{
     grid-area: footer;
-    font-size: 40px;
+    font-size: 2.8rem;
     position: relative;
     color: hsl(0, 0%, 100%);
-    top: 60px;
-    left: 60px;
+    top: 3.75rem;
+    left:3.75rem;
     font-family: 'Overpass';
 }
 .footer .links .headgrp1{
     grid-area: footer;
-    font-size: 18px;
+    font-size: 1.3rem;
     position: relative;
     color: hsl(240, 2%, 79%);
-    top: 20px;
-    left: 400px;
+    top: 1.5rem;
+    left: 28.5rem;
     font-family: 'Overpass';
     font-weight: lighter;
 }
 .footer .links .headgrp2{
     grid-area: footer;
-    font-size: 18px;
+    font-size: 1.3rem;
     position: relative;
     color: hsl(240, 2%, 79%);
-    bottom: 222px;
-    left: 700px;
+    bottom: 15.3rem;
+    left: 50rem;
     font-family: 'Overpass';
     font-weight: lighter;
 }
 .footer .links .headgrp3{
     grid-area: footer;
-    font-size: 18px;
+    font-size: 1.3rem;
     position: relative;
     color: hsl(240, 2%, 79%);
-    bottom: 420px;
-    left: 1000px;
+    bottom: 28.7rem;
+    left: 71.3rem;
     font-family: 'Overpass';
     font-weight: lighter;
 }
@@ -374,10 +361,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 400px;
-    top: 20px;
-    width: 80px;
-    margin-top: 10px;
+    left: 28.5rem;
+    width: 5rem;
+    margin-top: 1.4rem;
     font-family: 'Overpass';
 } 
 .footer .links .grp1 > a , .footer .links .grp2 > a , .footer .links .grp3 > a{
@@ -389,10 +375,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 700px;
-    bottom: 222px;
-    width: 80px;
-    margin-top: 10px;
+    left: 50rem;
+    bottom: 15.5rem;
+    width: 5rem;
     font-family: 'Overpass';
 }
 .footer .links .grp3{
@@ -400,9 +385,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 1000px;
-    bottom: 410px;
-    width: 80px;
+    left: 71.3rem;
+    bottom: 29rem;
+    width: 5rem;
     font-family: 'Overpass';
 }
 .footer .links .grp1 > a:hover , .footer .links .grp2 > a:hover , .footer .links .grp3 > a:hover{

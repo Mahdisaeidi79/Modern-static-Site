@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogr</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
+        integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="Container">
         <header class="header">
             <h1 class="siteName">Blogr</h1>
             <menu class="menu">
-                <ul class="menu1">
-                    <li><a href="#">Product</a> <img src="images/icon-arrow-light.svg" style="padding-left: 8px;"></li>
-                </ul>
-                <ul class="menu2">
-                    <li><a href="#">Company</a> <img src="images/icon-arrow-light.svg" style="padding-left: 8px;"></li>
-                </ul>
-                <ul class="menu3">
-                    <li><a href="#">Connect</a> <img src="images/icon-arrow-light.svg" style="padding-left: 8px;">
-                        <ul class="drop-content">
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Newsletter</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                        </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" style="color:hsl(0, 0%, 100%)">Product</a>
                     </li>
-                </ul>
-            </menu>
-         
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" style="color:hsl(0, 0%, 100%)">Company</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" style="color:hsl(0, 0%, 100%)" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Connect
+                        </a>
+                            <ul class="dropdown-menu shadow-lg drop-content" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                                <li><a class="dropdown-item" href="#">Linkedin</a></li>
+                            </ul>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </menu>
             <div class="mobileMenu"> <!-- mobile menu in responsive -->
                 <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
                 <div id="dropDown">
@@ -58,7 +78,7 @@
                 <p class="desc1">A modern publishing platform</p>
                 <p class="desc2">Grow your audience and build your online brand</p>
             </div>
-            <div class="startMore">
+            <div class="startMore ">
                 <div class="start"><a href="#">Start for Free</a></div>
                 <div class="more"><a href="#">Learn More</a></div>
             </div>
