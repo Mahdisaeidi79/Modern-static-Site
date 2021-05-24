@@ -487,6 +487,7 @@
         background: #ffffff;
         width: 80%;
         height: auto;
+        position: relative;
         margin: 40px auto 20px auto;
         border-radius: 5px;
         font-family: 'Overpass';

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogr</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
         integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA=="
@@ -16,6 +17,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#ff3d54"/>
 </head>
 
 <body>
@@ -25,33 +30,40 @@
             <menu class="menu">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="color:hsl(0, 0%, 100%)">Product</a>
-                    </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#" style="color:hsl(0, 0%, 100%)">Company</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" style="color:hsl(0, 0%, 100%)" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Connect
-                        </a>
-                            <ul class="dropdown-menu shadow-lg drop-content" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Contact</a></li>
-                                <li><a class="dropdown-item" href="#">Newsletter</a></li>
-                                <li><a class="dropdown-item" href="#">Linkedin</a></li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"
+                                        style="color:hsl(0, 0%, 100%)">Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color:hsl(0, 0%, 100%)">Company</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" style="color:hsl(0, 0%, 100%)"
+                                        id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Connect
+                                    </a>
+                                    <ul class="dropdown-menu shadow-lg drop-content"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                                        <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                                        <li><a class="dropdown-item" href="#">Linkedin</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </menu>
-            <div class="mobileMenu"> <!-- mobile menu in responsive -->
+                        </div>
+                    </div>
+                </nav>
+            </menu>
+            <div class="mobileMenu">
+                <!-- mobile menu in responsive -->
                 <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
                 <div id="dropDown">
                     <a href="#">Product <img src="images/icon-arrow-dark.svg"> </a>
@@ -74,15 +86,17 @@
                 <div class="login"><a href="/Login/index.html">Login</a></div>
                 <div class="signUp"><a href="#">Sign Up</a></div>
             </div>
-            <div class="description">
+            <div class="description animate__animated animate__tada ">
                 <p class="desc1">A modern publishing platform</p>
-                <p class="desc2">Grow your audience and build your online brand</p>
+                <p class="desc2 ">Grow your audience and build your online brand</p>
             </div>
             <div class="startMore ">
-                <div class="start"><a href="#">Start for Free</a></div>
+                <div class="start "><a href="#">Start for Free</a></div>
                 <div class="more"><a href="#">Learn More</a></div>
             </div>
         </header>
+
+
         <main class="main">
             <section class="topMain">
                 <h2 class="headDesc1">Designed for the future</h2>
@@ -114,12 +128,13 @@
             </section>
         </main>
 
+
         <footer class="footer">
             <h2 class="siteName">Blogr</h2>
             <div class="links">
                 <h3 class="headgrp1">Product</h3>
-                <p class="grp1"><a href="#">Overview</a><a href="#">Pricing</a><a href="#">Marketplace</a><a
-                        href="#">Features</a><a href="#">Integrations</a></p>
+                <p class="grp1"><a href="#">Overview</a><a href="#">Pricing</a><a href="#">Marketplace</a>
+                    <a href="#">Features</a><a href="#">Integrations</a></p>
                 <h3 class="headgrp2">Company</h3>
                 <p class="grp2"><a href="#">About</a><a href="#">Team</a><a href="#">Blog</a><a href="#">Careers</a></p>
                 <h3 class="headgrp3">Connect</h3>
@@ -132,7 +147,17 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("sw.js").then(swReg => {
+                    console.log("Worker Registered!");
+                }).catch(error => {
+                    console.log("There was an error", error);
+                });;
+            });
+        }
+    </script>
 </body>
 
 </html>
