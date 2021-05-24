@@ -11,7 +11,7 @@ workbox.generateSW({
       "**/sw.js",
       "node_modules/**/*"
   ],
-  swDest:"./sw.js",
+  swDest:"./PWA/sw.js",
   runtimeCaching:[
       {
           urlPattern:/\.(?:html|htm|xml)$/,
